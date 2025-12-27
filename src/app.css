@@ -1,0 +1,76 @@
+.HorizontalScroll {
+  touch-action: none;
+}
+
+/* Outer container */
+.HorizontalScroll .HorizontalScrollOuter {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+/* Inner scrolling container */
+.HorizontalScroll .HorizontalScrollOuter .HorizontalScrollInner {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+/* Children */
+.HorizontalScroll
+  .HorizontalScrollOuter
+  .HorizontalScrollInner
+  .HorizontalScrollInnerChildren {
+  flex-shrink: 0;
+}
+
+/* Track container */
+.HorizontalScroll .HorizontalScrollTrack {
+  padding: 13px; /* 12px + (2px / 2) */
+  position: relative;
+  width: 100%;
+}
+
+/* Track background */
+.HorizontalScroll .HorizontalScrollTrack::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 10px;
+  background: #242424; /* lighten(#222, 1%) */
+  z-index: -1;
+}
+
+/* Hover effect */
+.HorizontalScroll .HorizontalScrollTrack:hover .HorizontalScrollTrackInner::after {
+  opacity: 1;
+}
+
+/* Track thumb */
+.HorizontalScroll .HorizontalScrollTrack .HorizontalScrollTrackInner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Track thumb visual */
+.HorizontalScroll
+  .HorizontalScrollTrack
+  .HorizontalScrollTrackInner::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  border-radius: 10px;
+  background: #ffffff;
+  opacity: 0.5;
+  transition: opacity 0.25s ease-out;
+}
