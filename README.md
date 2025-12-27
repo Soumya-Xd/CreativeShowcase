@@ -9,7 +9,9 @@
 
 ## 🎬 Demo Preview
 
-<video src="assets/aby.mp4" controls muted autoplay loop style="max-width:100%; border-radius:12px;"></video>
+[![Creative Showcase Demo](https://img.youtube.com/vi/-CETb7fupR4/maxresdefault.jpg)](https://youtu.be/-CETb7fupR4)
+
+
 
 
 
