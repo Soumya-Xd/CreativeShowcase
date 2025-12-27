@@ -9,7 +9,8 @@
 
 ## 🎬 Demo Preview
 
-[![Creative Showcase Demo](https://img.youtube.com/vi/-CETb7fupR4/maxresdefault.jpg)](https://youtu.be/-CETb7fupR4)
+[![Creative Showcase Demo](assets/aby.png)](https://youtu.be/-CETb7fupR4)
+
 
 
 
