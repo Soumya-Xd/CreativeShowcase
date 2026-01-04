@@ -84,7 +84,7 @@ Built using **React, Node.js, Express, and MongoDB**, this project focuses on pe
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone <https://github.com/Soumya-Xd/CreativeShowcase>
    cd creative-showcase
    ```
 
